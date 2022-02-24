@@ -1,0 +1,215 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+.body {
+  font-family: 'Roboto Slab' serif;
+  font-size:100%;
+  background: linear-gradient(68.15deg, #62b5f4 15.62%, #4bc4dd 86.61%);
+}
+.cabecalho{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 16px, 0px;
+}
+
+
+.naveg-1{
+ font-family: 'Righteous', cursive;
+ display: flex;
+ gap: 40px;
+ margin:10px;
+
+}
+
+
+.menu-item{
+ color: black;
+ font-size: 20px;
+}
+
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  display: block;
+}
+
+.conteudo{
+  border-top: 0.6px solid #c2fbff;
+  padding: 20px;
+}
+
+
+form-wrapper {
+  justify-content: center;
+  font-family: Roboto, Arial, sans-serif;
+  margin:4px;
+
+}
+
+
+section .t-2{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 32px;
+  letter-spacing: 1px;
+
+}
+  
+
+form {
+  margin: auto;
+  width: 450px;
+  background-color: white;
+  padding: 30px 20px;
+  border-radius: 5px;
+}
+
+
+form .select-1{
+  margin-bottom:30px;
+  background-color: white;
+  flex-direction: column;
+  border-radius: 25px;
+  padding: 7px;
+  border-color: #55ace2
+  
+}
+#myfile{
+  font-family: Roboto, Arial, sans-serif;
+  margin-bottom:30px10px;
+  background-color: white;
+  flex-direction: column;
+  padding: 7px;
+}
+
+
+form .input-block {
+  margin-bottom: 30px;
+}
+
+
+form .input-block label {
+  font-size: 17px;
+  color: #0d0c0c4;
+}
+
+
+form .input-block input {
+  width: 100%;
+  display: block;
+  margin-top: 1px;
+  padding: 7px;
+  font-size: 16px;
+  color: #000000;
+  border-radius: 3px;
+  border: 1px solid #66ccff;
+  outline-color: #66ccff;
+  
+}
+
+
+ form .btn-login {
+  display: block;
+  min-width: 120px;
+  background-color: #66f5ff;
+  color: black;
+  border-radius: 25px;
+  margin: auto;
+  padding: 7px;
+}
+form .btn-login:hover {
+  background-color: #1695e3;
+  
+}
+
+
+form {
+  animation-name: relax; 
+  animation-duration: 3s;
+}
+
+
+
+section .t-2{
+  animation-name: relax; 
+  animation-duration: 4s;
+}
+
+
+@keyframes relax {
+  from {
+    opacity:0;
+    transform:scale(0.9)
+  }
+  to {
+    opacity:1;  
+    transform:scale(1)
+  }
+}
+
+
+form{
+  overflow: hidden;
+} 
+
+  form .input-block {
+  animation-name: move; 
+  animation-duration: 2s;
+  animation-delay: 0.25s;
+  }
+
+.conteudo{
+  animation-name: move; 
+  animation-duration: 0.75s;
+}
+
+
+@keyframes move {
+  from{
+    opacity:0;
+    transform:translatex(-35%);
+    
+  }
+  to{
+    opacity:1; 
+    transform:translatex(0%);
+  }
+}
+
+
+.ft-1{
+  margin: 4px;
+  border-top: 0.6px solid #c2fbff;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 24px, 10px;
+}
+  form.validate-error{
+   animation: note 500ms;
+ }
+@keyframes note:{
+  0%{
+    transform:translateX(0)
+  }
+  35%{
+    transform:translateX(-15%)
+  }
+  70%{
+    transform:translateX(15%)
+  }
+ 100%{
+  transform:translateX(0)
+}
+}
+
